@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-black);
+    font: 400 14px var(--font-total);
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+a{
+    color: var(--color-blue);
+    text-decoration: none;
+    transition: color .2s;
+
+    &:--enter{
+        text-decoration: none;
+        color: color(var(--color-blue) shade(20%));
+    }
+}
+
+.-center{
+    text-align: center;
+}
+
+

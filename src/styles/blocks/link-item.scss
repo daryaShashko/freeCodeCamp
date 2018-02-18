@@ -1,0 +1,22 @@
+.link-item{
+  display: inline-block;
+  font-size: 22px;
+  margin: 15px;
+  position: relative;
+  text-transform: uppercase;
+
+  &::before{
+    content: "\27AE";
+    font-size: 22px;
+    position: absolute;
+    right: 100%;
+    transform: rotate(180deg);
+    transition: right .2s;
+  }
+
+  &:hover{
+    &::before{
+      right: 110%;
+    }
+  }
+}

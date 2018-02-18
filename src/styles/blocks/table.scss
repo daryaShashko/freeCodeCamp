@@ -1,0 +1,29 @@
+table{
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 4px;
+
+  img{
+    width: 40px;
+    margin-right: 10px;
+  }
+}
+
+thead {
+  background-color: var(--color-yellow);
+  padding: 10px 0;
+
+  th {
+    padding: 10px 0;
+  }
+}
+
+tbody{
+  tr:nth-of-type(2n+1){
+    background-color: color(var(--color-blue) tint(95%));
+  }
+
+  tr:not(:nth-of-type(2n+1)){
+    background-color: color(var(--color-yellow) tint(95%));
+  }
+}

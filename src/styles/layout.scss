@@ -1,0 +1,32 @@
+.row{
+  width: 100%;
+}
+
+.content-wrapper{
+  padding: 0 15px;
+
+  & + &{
+    margin-top: 83px;
+  }
+}
+
+
+
+@media #{$break2} {
+  .content-wrapper{
+    padding: 0 32px;
+  }
+}
+
+@media #{$break3}, #{$break4} {
+  .row{
+    & + &{
+      margin-top: 109px;
+    }
+  }
+  .content-wrapper{
+    max-width: 944px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

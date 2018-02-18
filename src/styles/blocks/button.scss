@@ -1,0 +1,39 @@
+
+:--button{
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+  @include button-color(var(--color-blue));
+  transition: background-color .2s;
+
+  & + &{
+    margin-left: 15px;
+  }
+
+  &.-active{
+    background-color: color(var(--color-blue) shade(50%));
+  }
+  
+}
+
+:--button:--enter{
+             cursor: pointer;
+}
+
+.button{
+  &.-red{
+    @include button-color(var(--color-red));
+  }
+
+  &.-orange{
+    @include button-color(var(--color-orange));
+  }
+
+  &.-green{
+    @include button-color(var(--color-green));
+  }
+
+}

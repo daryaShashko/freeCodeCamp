@@ -1,0 +1,22 @@
+:root {
+    --color-white:      #FFFFFF;
+    --color-black:      #282C34;
+    --color-gray:       #CDD8E0;
+    --color-orange:     #FAA124;
+    --color-yellow:     #F7D72E;
+    --color-red:        #CD3539;
+    --color-violet:     #6F57A6;
+    --color-green:      #669C3A;
+    --color-blue:       #4AABED;
+
+    --font-total:       Verdana, Geneva, sans-serif;
+}
+
+@custom-selector :--button button, .button;
+@custom-selector :--enter :hover, :focus;
+
+
+$break1: "(max-width: 767px)";
+$break2: "(min-width: 768px) and (max-width: 979px)";
+$break3: "(min-width: 980px) and (max-width: 1439px)";
+$break4: "(min-width: 1440px)";

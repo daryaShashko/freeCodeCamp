@@ -1,0 +1,35 @@
+
+.task__header{
+  margin-bottom: 25px;
+}
+
+.task__name{
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.task__point{
+  margin-bottom: 10px;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+
+  &::before{
+    content: "\261B";
+    color: var(--color-yellow);
+    font-size: 28px;
+    line-height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media #{$break2}, #{$break3}, #{$break4} {
+  .tasks{
+  }
+
+  .task{
+    flex: 1 0 33.3%;
+  }
+}
